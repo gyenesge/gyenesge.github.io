@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin-block-start: 0;
+}
+
+header.header, footer.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.page-title {
+    font-family: 'Lora', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ff4500; /* Egy feltűnő szín */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-no-padding {
+    display: flex;
+    flex-direction: column; 
+    position: relative;
+    padding: 0px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: lightcoral;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-internal {
+    padding: 20px;
+    margin: 0px;
+}
+
+.block-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.read-more-content {
+    display: none; /* Kezdetben elrejtve */
+    margin: 10px 0;
+}
+
+.read-more-content.visible {
+    display: block; /* Láthatóvá teszi az elemeket */
+}
+
+.primary-button {
+    padding: 8px;
+    background-color: lightcoral;
+    color: #222;
+    border: 0;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.news-item {
+    flex: 1 1 calc(33.333% - 10px);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.news-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.contact {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .news-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.counter-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: lower;
+    text-align: center;
+    margin: 0px;
+}
+
+
+/* Info ikon stílusa */
+.info-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+    background-color: #007bff;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+    align-self: flex-end;
+    margin: 0 20px 20px;
+}
+
+/* Magyarázó doboz alapértelmezetten rejtve */
+.info-box {
+    box-sizing: border-box;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 0 0 5px 5px;
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Láthatóvá válik, ha az "active" osztály rajta van */
+.info-box.active {
+    display: block;
+}
+
+.info-box a {
+    color: lightcoral; 
+    text-decoration: none;
+}
+
+.info-box a:hover {
+    color: lightgray;
+    text-decoration: underline;
+}
+
+ol {
+    margin-top: 0;
+}
+
+ul {
+    margin-top: 0;
+}

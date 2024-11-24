@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive HTML Példa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="m30lezaras.css">
+</head>
+<body>
+    <header class="header">
+        <div class="page-title">Állítsák helyre az M30 autópályát!</div>
+        <p>Már hónapok óta le van zárva az M30-as autópálya, ami azon túl, hogy szégyen az országnak, 
+            jelentős károkat okoz az erre utazóknak és itt lakóknak. Elfogadhatatlan, hogy majd egy évet 
+            kell még várni a hibák javításra. Petíciónkkal követeljük az azonnali és hatékony javítások 
+            megindítását.</p>
+    </header>
+
+
+    <main class="container">
+
+        <!-- Block 2: Kár számláló -->
+        <section class="card-no-padding">
+             <div id="dynamic-content">
+                <p class="counter-title">Elvesztegetett idő</p>
+                <p id="time-lost" class="counter">Elvesztegetett idő</p>
+                <p class="counter-title">Okozott kár</p>
+                <p id="cost-lost" class="counter">Okozott kár</p>
+            </div>
+
+            <div class="info-icon" id="info-toggle" onclick="toggleInfo()">
+                <i class="fas fa-info-circle"></i> <!-- Font Awesome ikon -->
+            </div>
+            <div class="info-box" id="info-box">
+                <p>Az értékek számítása a következő adatok alapján történik:</p>
+                <ul>
+                    <li>Napi átlagos áthaladó forgalom a <a href="https://internet.kozut.hu/kozerdeku-adatok/orszagos-kozuti-adatbank/forgalomszamlalas/">2023-as forgalom számlálás</a> 
+                        alapján: 14 564 jármű</li>
+                    <li>Átlagos becsült időveszteség járművenként: 20 perc</li>
+                    <li>Magyar átlagos bruttó bér <a href="https://www.ksh.hu/gyorstajekoztatok/ker/ker2408.html">KSH 2024-es adatai</a> alapján: 628 800 Ft</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Block 3: Petíció tartalma -->
+        <section class="card">
+            <div class="block-title">Petíció</div>
+            <p>Címzett: Lázár János, építési és közlekedési miniszter</p>
+            <p>Tisztelt Miniszter Úr!</p>
+            <div class="read-more-content">
+                <p>2021 októberében nagy büszkeséggel adták át az M30-as autópálya új, Miskolcot és 
+                Tornyosnémetit összekötő szakaszát, amely nemcsak Magyarország, hanem egész Közép-Európa 
+                közlekedésében kulcsszerepet játszik. Ez a szakasz a Via Carpatia nemzetközi folyosó 
+                része, mely az európai gazdasági és logisztikai hálózat gerincét alkotja. Nemzeti és 
+                európai szinten is jelentős szakasz épült meg, jelentős részben uniós forrásokból.
+                </p>
+                <p>Mégis, mindössze <strong>két év</strong> elteltével, 2024 februárjában a szakasz súlyos hibái miatt 
+                    teljes szélességében le kellett zárni az autópályát. Ez nemcsak az autópálya-mérnöki 
+                    gyakorlat kritikája, hanem szégyen az ország számára is. Hogyan lehetséges, hogy egy 
+                    ilyen kaliberű beruházás mindössze két év alatt használhatatlanná váljon? ...
+                </p>
+
+                <p>A közlekedők és a környéken élők elviselhetetlen helyzetbe kerültek:</p>
+                <ul>
+                    <li>Az utazási idők drasztikusan megnövekedtek, a 3-as főút és Arnót település és 
+                        környéke élhetetlenné vált a torlódások és a megnövekedett forgalom miatt.</li>
+                    <li>Az Arnót belterületére terelődő forgalom életveszélyes helyzeteket teremt, és 
+                        már személyi sérülések is történtek.</li>
+                    <li>Az itt elhaladó nemzetközi forgalom és az európai uniós polgárok méltán felháborodhatnak, 
+                        hiszen a pálya építésére szánt EU-s forrásokat nem megfelelő minőségbiztosítási 
+                        eljárások mellett használták fel.</li>
+                </ul>
+                <p>Elfogadhatatlan, hogy 9 hónap vizsgálódás után további 11 hónap javítási ígéret hangzott 
+                    el, amely közel azonos az eredeti autópálya teljes építési idejével. Ráadásul a nyilatkozatok 
+                    alapján a helyreállítás határideje egyre távolabbi időpontra tolódik, ami felveti a 
+                    felelősök elszámoltatásának hiányát és a projektmenedzsment komoly problémáit.</p>
+            </div>
+
+            <p>Követeljük:</p>
+            <ol><li>Azonnali és átlátható tájékoztatást a helyreállítási munkálatok ütemezéséről.</li>
+            <li>A forgalom helyreállítását legkésőbb 2025 tavaszáig, beleértve az ideiglenes megoldásokat is.</li>
+            <li>A kivitelezésért és a minőségbiztosításért felelős szereplők felelősségre vonását, és az 
+                okozott károk megtérítését a közösség felé.</li>
+            <li>A helyi közlekedési problémák azonnali enyhítését, ideértve az Arnótot elkerülő szakasz 
+                forgalmi szabályozását és biztonsági intézkedéseket.</li></ol>
+
+            <div class="read-more-content">
+                <p>Tisztelt Miniszter Úr, egy ilyen jelentőségű autópálya nem lehet nemzeti szégyen tárgya. 
+                    Az Ön felelőssége, hogy biztosítsa a hibák kijavítását, a forgalom mihamarabbi helyreállítását, 
+                    és a helyi közösségek megóvását az indokolatlan terhektől.</p>
+                <p><strong>Várjuk gyors és hatékony intézkedéseit!</strong></p>
+            </div>
+            <button id="toggle-button" class="primary-button" onclick="toggleReadMore()">Az egészet elolvasom...</button>
+        </section>
+
+        <!-- Block 4: Miért fontos ez? -->
+        <section class="card">
+            <div class="block-title">Miért fontos ez?</div>
+            <p>Itt további hat mondat szöveg található. Ez csak példa szöveg, amit tetszőlegesen helyettesíthetsz majd.</p>
+        </section>
+
+        <!-- Block 5: Hírek -->
+        <section class="card">
+            <div class="block-title">Hírek</div>
+            <div class="news-list">
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/150" alt="Hír kép">
+                    <p>Hír 1 rövid összefoglaló.</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/150" alt="Hír kép">
+                    <p>Hír 2 rövid összefoglaló.</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://via.placeholder.com/150" alt="Hír kép">
+                    <p>Hír 3 rövid összefoglaló.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Kapcsolattartó blokk -->
+    <footer class="footer">
+        <p>Látogass meg minket a Facebookon: <a href="https://facebook.com" target="_blank">Facebook oldal</a></p>
+    </footer>
+    
+    <script>
+
+function toggleInfo() {
+    const infoBox = document.getElementById("info-box");
+    infoBox.classList.toggle("active"); // Az "active" osztály állapotának váltása
+};
+
+function toggleReadMore() {
+    const contents = document.querySelectorAll(".read-more-content");
+    const isExpanded = Array.from(contents).some(content => content.classList.contains("visible"));
+
+    // Állapot alapján váltás
+    contents.forEach(content => {
+        if (isExpanded) {
+            content.classList.remove("visible"); // Elrejtés
+        } else {
+            content.classList.add("visible"); // Megjelenítés
+        }
+    });
+
+    // Gomb szövegének módosítása
+    document.getElementById("toggle-button").textContent  = isExpanded ? "Az egészet elolvasom..." : "Összezár";
+}
+
+
+////////////////////////////////////////SZÁMÍTÁS
+// Konstansok
+const timeLossPerCar = 1200.0; // másodperc
+const dailyTraffic = 14564.0;
+const startDate = new Date(2024, 1, 17); // Hónap indexeléssel: február = 1
+const avgSalary = 628800.0; // Ft
+
+// Idő és költség együtthatók kiszámítása
+const timeCoeff = (dailyTraffic * timeLossPerCar) / (24.0 * 60.0 * 60.0);
+const costCoeff = avgSalary / (21.0 * 8.0 * 3600.0);
+
+console.log(`Idő együttható: ${timeCoeff}  Költség együttható: ${costCoeff}`);
+
+
+        // Frissítési logika
+function updateDynamicContent() {
+    const now = new Date();
+    const totalSeconds = (now - startDate) / 1000; // Összes eltelt másodperc
+    const totalTimeLoss = totalSeconds * timeCoeff; // Idő veszteség másodpercben
+    const totalCost = totalTimeLoss * costCoeff; // Pénzbeli veszteség
+
+    // Idő bontása évek, hónapok, napok stb.
+    const years = Math.floor(totalTimeLoss / (365 * 24 * 3600));
+    let remainder = totalTimeLoss % (365 * 24 * 3600);
+    const months = Math.floor(remainder / (30 * 24 * 3600));
+    remainder %= (30 * 24 * 3600);
+    const days = Math.floor(remainder / (24 * 3600));
+    remainder %= (24 * 3600);
+    const hours = Math.floor(remainder / 3600);
+    remainder %= 3600;
+    const minutes = Math.floor(remainder / 60);
+    const seconds = Math.floor(remainder % 60);
+
+    // Frissítés a HTML-ben
+    document.getElementById("time-lost").textContent = 
+        `${years} év ${months} hónap ${days} nap ` +
+        `${hours.toString().padStart(2, '0')} óra ${minutes.toString().padStart(2, '0')} perc`;
+    document.getElementById("cost-lost").textContent = 
+        `${Math.round(totalCost).toLocaleString('hu-HU')} Ft`;
+}
+
+// Frissítés x másodpercenként
+setInterval(updateDynamicContent, 200);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
