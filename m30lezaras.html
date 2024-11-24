@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#333333">
     <title>Responsive HTML Példa</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
@@ -48,6 +49,7 @@
             <div class="block-title">Petíció</div>
             <p>Címzett: Lázár János, építési és közlekedési miniszter</p>
             <p>Tisztelt Miniszter Úr!</p>
+            <div class="read-less-content">* * *</div>
             <div class="read-more-content">
                 <p>2021 októberében nagy büszkeséggel adták át az M30-as autópálya új, Miskolcot és 
                 Tornyosnémetit összekötő szakaszát, amely nemcsak Magyarország, hanem egész Közép-Európa 
@@ -85,6 +87,7 @@
             <li>A helyi közlekedési problémák azonnali enyhítését, ideértve az Arnótot elkerülő szakasz 
                 forgalmi szabályozását és biztonsági intézkedéseket.</li></ol>
 
+            <div class="read-less-content">* * *</div>
             <div class="read-more-content">
                 <p>Tisztelt Miniszter Úr, egy ilyen jelentőségű autópálya nem lehet nemzeti szégyen tárgya. 
                     Az Ön felelőssége, hogy biztosítsa a hibák kijavítását, a forgalom mihamarabbi helyreállítását, 
@@ -97,24 +100,35 @@
         <!-- Block 4: Miért fontos ez? -->
         <section class="card">
             <div class="block-title">Miért fontos ez?</div>
-            <p>Itt további hat mondat szöveg található. Ez csak példa szöveg, amit tetszőlegesen helyettesíthetsz majd.</p>
+            <p>Egy ilyen hibát már a lezárások előtt hónapokkal fel kellett ismerni, ami elég lett volna a megoldási 
+                terv kidolgozására. A lezárást követően azonnal neki kellett volna állni a javításnak, hogy minél kisebb legyen a kiesés.
+                Azonban a döntéshozók elkényelmesedtek, mert az emberek nem adnak hangot a nap mint nap megélt kárnak.
+            </p>
+            <p> Ezzel a petícióval megmutathatjuk, hogy ennek a lezárásnak minden napja és órája kárt okoz az embereknek és a lehető 
+                leggyorsabb és leghatékonyabb megoldás megvalósítására szükség van. 
+            </p>
+            <p>Többen hangosabbak lehetünk. Oszd meg a petíciót ismerőseiddel is!                
+            </p>
         </section>
 
         <!-- Block 5: Hírek -->
         <section class="card">
-            <div class="block-title">Hírek</div>
+            <div class="block-title">Kapcsolódó anyagok</div>
             <div class="news-list">
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/150" alt="Hír kép">
-                    <p>Hír 1 rövid összefoglaló.</p>
+                <div class="news-item" style="background-image: url('https://cdn.borsod24.hu/uploads/2024/09/het-m30-as-beszakadva-240819.jpg');">
+                    <a href="https://borsod24.hu/2024/09/27/foldbe-sullyedt-tervek-miskolc-mellett-hosszan-elhuzodo-felujitas-var-az-m30-as-autopalyara/">
+                    Borsod24: Még 10-11 hónap a helyreállítás
+                    </a>
                 </div>
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/150" alt="Hír kép">
-                    <p>Hír 2 rövid összefoglaló.</p>
+                <div class="news-item" style="background-image: url('https://img.hvg.hu/Img/da658e97-86c0-40f3-acd3-b0a850f32c30/e5e0a265-5199-417c-a681-84bfa5f10425.jpg');">
+                    <a href="https://hvg.hu/cegauto/20240219_Video_M30_autopalya_szetrepedt_ut_Strabag_utlezaras_utfelujitas">
+                    HVG: Videó a lezárt autópályáról
+                    </a>
                 </div>
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/150" alt="Hír kép">
-                    <p>Hír 3 rövid összefoglaló.</p>
+                <div class="news-item" style="background-image: url('https://beruhazas.gov.hu/wp/uploads/2015/10/m30_miskolc-tornyosnemeti-718x1024.jpg');">
+                    <a href=https://beruhazas.gov.hu/projektek/m30-gyorsforgalmi-ut-miskolc-tornyosnemeti-kozotti-szakasz/9119">
+                    Minisztérium: M30 autópálya megvalósításának részletei
+                    </a>
                 </div>
             </div>
         </section>
@@ -123,7 +137,9 @@
 
     <!-- Kapcsolattartó blokk -->
     <footer class="footer">
-        <p>Látogass meg minket a Facebookon: <a href="https://facebook.com" target="_blank">Facebook oldal</a></p>
+        <h1>Maradjunk kapcsolatban!</h1>
+        <p>Kövesd a híreinket és lépj velünk kapcsolatban a Facebook oldalunkon:</p>
+        <p><a href="https://www.facebook.com/MiskolciaPont" target="_blank">aPont Miskolc</a></p>
     </footer>
     
     <script>
@@ -135,6 +151,7 @@ function toggleInfo() {
 
 function toggleReadMore() {
     const contents = document.querySelectorAll(".read-more-content");
+    const lessContents = document.querySelectorAll(".read-less-content");
     const isExpanded = Array.from(contents).some(content => content.classList.contains("visible"));
 
     // Állapot alapján váltás
@@ -143,6 +160,14 @@ function toggleReadMore() {
             content.classList.remove("visible"); // Elrejtés
         } else {
             content.classList.add("visible"); // Megjelenítés
+        }
+    });
+
+    lessContents.forEach(lessContents => {
+        if (isExpanded) {
+            lessContents.classList.remove("invisible"); // Megjelenítés
+        } else {
+            lessContents.classList.add("invisible"); // Elrejtés
         }
     });
 
