@@ -24,29 +24,33 @@
         <!-- Block 2: Kár számláló -->
         <section class="card-no-padding">
              <div id="dynamic-content">
-                <p class="counter-title">Elvesztegetett idő</p>
+                <p class="counter-title">Autóban töltött extra idő</p>
                 <p id="time-lost" class="counter">Elvesztegetett idő</p>
                 <p class="counter-title">Okozott kár</p>
                 <p id="cost-lost" class="counter">Okozott kár</p>
             </div>
 
             <div class="info-icon" id="info-toggle" onclick="toggleInfo()">
-                <i class="fas fa-info-circle"></i> <!-- Font Awesome ikon -->
+                Részletek
             </div>
             <div class="info-box" id="info-box">
-                <p>Az értékek számítása a következő adatok alapján történik:</p>
+                <p>A lezárás az élet számos területén gondot okoz: terheli a környezetet, rontja a vállalkozások 
+                    teljesítményét, megterheli a környékbeli emberek életét, és még sorolhatnánk. Azonban mi az 
+                    autósok szemszögéből fogtuk meg a kárt, amit a hiba okoz. Az autóban töltött extra időt áraztuk 
+                    be az alábbi adatok segítségével:</p>
                 <ul>
                     <li>Napi átlagos áthaladó forgalom a <a href="https://internet.kozut.hu/kozerdeku-adatok/orszagos-kozuti-adatbank/forgalomszamlalas/">2023-as forgalom számlálás</a> 
                         alapján: 14 564 jármű</li>
                     <li>Átlagos becsült időveszteség járművenként: 20 perc</li>
                     <li>Magyar átlagos bruttó bér <a href="https://www.ksh.hu/gyorstajekoztatok/ker/ker2408.html">KSH 2024-es adatai</a> alapján: 628 800 Ft</li>
                 </ul>
+                <p>Látható tehát, hogy a becslés erősen alulbecsli az összes kárt, ami napról napra csak gyűlik.</p>
             </div>
         </section>
 
         <!-- Block 3: Petíció tartalma -->
-        <section class="card">
-            <div class="block-title">Petíció</div>
+        <section class="card" id="peticio">
+            <div class="block-title"></a>Petíció</div>
             <p>Címzett: Lázár János, építési és közlekedési miniszter</p>
             <p>Tisztelt Miniszter Úr!</p>
             <div class="read-less-content">* * *</div>
@@ -82,7 +86,7 @@
             <p>Követeljük:</p>
             <ol><li>Azonnali és átlátható tájékoztatást a helyreállítási munkálatok ütemezéséről.</li>
             <li>A forgalom helyreállítását legkésőbb 2025 tavaszáig, beleértve az ideiglenes megoldásokat is.</li>
-            <li>A kivitelezésért és a minőségbiztosításért felelős szereplők felelősségre vonását, és az 
+            <li>A tervezésért, a kivitelezésért és a minőségbiztosításért felelős szereplők felelősségre vonását, és az 
                 okozott károk megtérítését a közösség felé.</li>
             <li>A helyi közlekedési problémák azonnali enyhítését, ideértve az Arnótot elkerülő szakasz 
                 forgalmi szabályozását és biztonsági intézkedéseket.</li></ol>
@@ -109,11 +113,14 @@
             </p>
             <p>Többen hangosabbak lehetünk. Oszd meg a petíciót ismerőseiddel is!                
             </p>
+            <div class="fb-share-button"
+                data-href="https://gyenesge.github.io/m30lezaras.html" data-layout="button_count">
+            </div>
         </section>
 
         <!-- Block 5: Hírek -->
         <section class="card">
-            <div class="block-title">Kapcsolódó anyagok</div>
+            <div class="block-title">Kapcsolódó hírek</div>
             <div class="news-list">
                 <div class="news-item" style="background-image: url('https://cdn.borsod24.hu/uploads/2024/09/het-m30-as-beszakadva-240819.jpg');">
                     <a href="https://borsod24.hu/2024/09/27/foldbe-sullyedt-tervek-miskolc-mellett-hosszan-elhuzodo-felujitas-var-az-m30-as-autopalyara/">
@@ -140,7 +147,11 @@
         <h1>Maradjunk kapcsolatban!</h1>
         <p>Kövesd a híreinket és lépj velünk kapcsolatban a Facebook oldalunkon:</p>
         <p><a href="https://www.facebook.com/MiskolciaPont" target="_blank">aPont Miskolc</a></p>
+        <div><a href="https://www.facebook.com/MiskolciaPont" target="_blank"><img id="footer-logo" src="apontlogo.jpg"></a></div>
     </footer>
+    
+    <!-- Facebook SDK -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"></script>
     
     <script>
 
@@ -173,6 +184,12 @@ function toggleReadMore() {
 
     // Gomb szövegének módosítása
     document.getElementById("toggle-button").textContent  = isExpanded ? "Az egészet elolvasom..." : "Összezár";
+
+    // Scrollozás a kártya elejére
+    if (!isExpanded) {
+        const card = document.getElementById('peticio');
+        card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
 
 
