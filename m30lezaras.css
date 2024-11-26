@@ -114,12 +114,41 @@ footer img {
 
 .primary-button {
     padding: 8px;
-    background-color: lightcoral;
+    background-color: red;
+    color: #eee;
+    border: 0;
+    border-radius: 3px;
+    font-weight: bolder;
+    font-size: medium;
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s; 
+}
+
+.primary-button:active {
+    background-color: darkred; 
+    transform: scale(0.98);
+}
+
+.secondary-button {
+    padding: 8px;
+    background-color: lightgray;
     color: #222;
     border: 0;
     border-radius: 3px;
     font-weight: bolder;
     font-size: medium;
+
+    cursor: pointer;
+    transition: transform 0.1s, background-color 0.1s; 
+}
+
+.bm {
+    margin-bottom: 10px;
+}
+
+.secondary-button:active {
+    background-color: gray; 
+    transform: scale(0.98); 
 }
 
 .news-list {
