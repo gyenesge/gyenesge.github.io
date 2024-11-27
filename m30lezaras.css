@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "aHang Rounded Web", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -10,7 +10,21 @@ p {
     margin-block-start: 0;
 }
 
-header.header, footer.footer {
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url('hatter.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -20,8 +34,9 @@ header.header, footer.footer {
 }
 
 
+
 footer a {
-    color:coral;
+    color: #f33;
     text-decoration: none;
     font-size: large;
 }
@@ -39,51 +54,47 @@ footer img {
 }
 
 .page-title {
-    font-family: 'Lora', serif;
     font-size: 2.5em;
     font-weight: bold;
-    color: coral;
-    text-transform: uppercase;
+    color: lightgray;
+/*    text-transform: uppercase;*/
     letter-spacing: 2px;
-    margin: 0;
+    margin: 50px 0 30px 0;
     padding: 10px;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 0;
 }
 
 
-.card {
-    display: flex;
-    flex-direction: column; 
-    position: relative;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+section {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.section-white {
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
-.card-no-padding {
+.section-gray {
+    background-color: #f8f8f8;
+}
+
+.section-red {
+    background-color: lightcoral;
+}
+
+.inner-container {
+    margin: 0 auto;
+    max-width: 1000px;
     display: flex;
     flex-direction: column; 
     position: relative;
-    padding: 0px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: lightcoral;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    padding: 20px;
 }
 
-.card-internal {
-    padding: 20px;
-    margin: 0px;
-}
 
 .block-title {
     font-size: 1.5rem;
@@ -117,11 +128,13 @@ footer img {
     background-color: red;
     color: #eee;
     border: 0;
-    border-radius: 3px;
+    border-radius: 8px;
     font-weight: bolder;
-    font-size: medium;
+    font-size: large;
     cursor: pointer;
     transition: transform 0.1s, background-color 0.1s; 
+    padding: 10px 20px 10px 20px;
+    align-self: center;
 }
 
 .primary-button:active {
@@ -134,12 +147,13 @@ footer img {
     background-color: lightgray;
     color: #222;
     border: 0;
-    border-radius: 3px;
+    border-radius: 8px;
     font-weight: bolder;
     font-size: medium;
-
+    padding: 10px 20px 10px 20px;
     cursor: pointer;
     transition: transform 0.1s, background-color 0.1s; 
+    align-self: center;
 }
 
 .bm {
@@ -196,7 +210,7 @@ footer img {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Árnyék a szövegen */
     background-color: rgba(0, 0, 0, 0.5); /* Félig átlátszó háttér a szöveghez */
     padding: 10px;
-    border-radius: 5px; /* Lekerekített sarkok */
+    border-radius: 8px; /* Lekerekített sarkok */
     max-width: 80%; /* Maximum szélesség */
 }
 
@@ -239,10 +253,11 @@ footer img {
 /* Info ikon stílusa */
 .info-icon {
     cursor: pointer;
-    font-size: 0.8em;
+    font-size: 1em;
+    font-weight: bold;
     background-color: #007bff;
     color: white;
-    border-radius: 10px;
+    border-radius: 8px;
     /*width: 30px;*/
     height: 30px;
     display: flex;
@@ -250,9 +265,9 @@ footer img {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin-top: auto;
-    align-self: flex-end;
+    align-self: center;
     margin: 0 20px 20px;
-    padding: 0 5px 0 5px;
+    padding: 0 10px 0 10px;
 }
 
 /* Magyarázó doboz alapértelmezetten rejtve */
@@ -263,7 +278,7 @@ footer img {
     color: #fff;
     padding: 15px;
     margin-top: 10px;
-    border-radius: 0 0 5px 5px;
+    border-radius: 8px;
     width: 100%; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -289,4 +304,34 @@ ol {
 
 ul {
     margin-top: 0;
+}
+
+
+.facebook-share-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: #1877f2; /* Facebook kék */
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: none;
+    align-self: center;
+}
+
+.facebook-share-button:hover {
+    background-color: #145db2; /* Sötétebb kék hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.facebook-icon {
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
 }

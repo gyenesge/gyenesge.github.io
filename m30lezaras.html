@@ -6,7 +6,11 @@
     <meta name="theme-color" content="#333333">
     <title>Petíció az M30 helyreállításáért</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet">
+    <link rel="preload" href="https://ahang.hu/wp-content/themes/hub/assets/vendors/liquid-icon/lqd-essentials/fonts/lqd-essentials.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="m30lezaras.css">
 </head>
 <body>
@@ -23,122 +27,139 @@
     <main class="container">
 
         <!-- Block 2: Kár számláló -->
-        <section class="card-no-padding">
-             <div id="dynamic-content">
-                <p class="counter-title">Autóban töltött extra idő</p>
-                <p id="time-lost" class="counter">Elvesztegetett idő</p>
-                <p class="counter-title">Okozott kár</p>
-                <p id="cost-lost" class="counter">Okozott kár</p>
-            </div>
+        <section class="section-red">
+            <div class="inner-container">
+                <div id="dynamic-content">
+                    <p class="counter-title">Autóban töltött extra idő</p>
+                    <p id="time-lost" class="counter">Elvesztegetett idő</p>
+                    <p class="counter-title">Okozott kár</p>
+                    <p id="cost-lost" class="counter">Okozott kár</p>
+                </div>
 
-            <div class="info-icon" id="info-toggle" onclick="toggleInfo()">
-                Részletek
-            </div>
-            <div class="info-box" id="info-box">
-                <p>A lezárás az élet számos területén gondot okoz: terheli a környezetet, rontja a vállalkozások 
-                    teljesítményét, megterheli a környékbeli emberek életét, és még sorolhatnánk. Azonban mi az 
-                    autósok szemszögéből fogtuk meg a kárt, amit a hiba okoz. Az autóban töltött extra időt áraztuk 
-                    be az alábbi adatok segítségével:</p>
-                <ul>
-                    <li>Napi átlagos áthaladó forgalom a <a href="https://internet.kozut.hu/kozerdeku-adatok/orszagos-kozuti-adatbank/forgalomszamlalas/">2023-as forgalom számlálás</a> 
-                        alapján: 14 564 jármű</li>
-                    <li>Átlagos becsült időveszteség járművenként: 20 perc</li>
-                    <li>Magyar átlagos bruttó bér <a href="https://www.ksh.hu/gyorstajekoztatok/ker/ker2408.html">KSH 2024-es adatai</a> alapján: 628 800 Ft</li>
-                </ul>
-                <p>Látható tehát, hogy a becslés erősen alulbecsli az összes kárt, ami napról napra csak gyűlik.</p>
+                <div class="info-icon" id="info-toggle" onclick="toggleInfo()">
+                    Részletek
+                </div>
+                <div class="info-box" id="info-box">
+                    <p>A lezárás az élet számos területén gondot okoz: terheli a környezetet, rontja a vállalkozások 
+                        teljesítményét, megterheli a környékbeli emberek életét, és még sorolhatnánk. Azonban mi az 
+                        autósok szemszögéből fogtuk meg a kárt, amit a hiba okoz. Az autóban töltött extra időt áraztuk 
+                        be az alábbi adatok segítségével:</p>
+                    <ul>
+                        <li>Napi átlagos áthaladó forgalom a <a href="https://internet.kozut.hu/kozerdeku-adatok/orszagos-kozuti-adatbank/forgalomszamlalas/">2023-as forgalom számlálás</a> 
+                            alapján: 14 564 jármű</li>
+                        <li>Átlagos becsült időveszteség járművenként: 20 perc</li>
+                        <li>Magyar átlagos bruttó bér <a href="https://www.ksh.hu/gyorstajekoztatok/ker/ker2408.html">KSH 2024-es adatai</a> alapján: 628 800 Ft</li>
+                    </ul>
+                    <p>Látható tehát, hogy a becslés erősen alulbecsli az összes kárt, ami napról napra csak gyűlik.</p>
+                </div>
             </div>
         </section>
 
         <!-- Block 3: Petíció tartalma -->
-        <section class="card" id="peticio">
-            <div class="block-title"></a>Petíció</div>
-            <p>Címzett: Lázár János, építési és közlekedési miniszter</p>
-            <p>Tisztelt Miniszter Úr!</p>
-            <div class="read-less-content">* * *</div>
-            <div class="read-more-content">
-                <p>2021 októberében nagy büszkeséggel adták át az M30-as autópálya új, Miskolcot és 
-                Tornyosnémetit összekötő szakaszát, amely nemcsak Magyarország, hanem egész Közép-Európa 
-                közlekedésében kulcsszerepet játszik. Ez a szakasz a Via Carpatia nemzetközi folyosó 
-                része, mely az európai gazdasági és logisztikai hálózat gerincét alkotja. Nemzeti és 
-                európai szinten is jelentős szakasz épült meg, jelentős részben uniós forrásokból.
-                </p>
-                <p>Mégis, mindössze <strong>két év</strong> elteltével, 2024 februárjában a szakasz súlyos hibái miatt 
-                    teljes szélességében le kellett zárni az autópályát. Ez nemcsak az autópálya-mérnöki 
-                    gyakorlat kritikája, hanem szégyen az ország számára is. Hogyan lehetséges, hogy egy 
-                    ilyen kaliberű beruházás mindössze két év alatt használhatatlanná váljon? ...
-                </p>
-
-                <p>A közlekedők és a környéken élők elviselhetetlen helyzetbe kerültek:</p>
-                <ul>
-                    <li>Az utazási idők drasztikusan megnövekedtek, a 3-as főút és Arnót település és 
-                        környéke élhetetlenné vált a torlódások és a megnövekedett forgalom miatt.</li>
-                    <li>Az Arnót belterületére terelődő forgalom életveszélyes helyzeteket teremt, és 
-                        már személyi sérülések is történtek.</li>
-                    <li>Az itt elhaladó nemzetközi forgalom és az európai uniós polgárok méltán felháborodhatnak, 
-                        hiszen a pálya építésére szánt EU-s forrásokat nem megfelelő minőségbiztosítási 
-                        eljárások mellett használták fel.</li>
-                </ul>
-                <p>Elfogadhatatlan, hogy 9 hónap vizsgálódás után további 11 hónap javítási ígéret hangzott 
-                    el, amely közel azonos az eredeti autópálya teljes építési idejével. Ráadásul a nyilatkozatok 
-                    alapján a helyreállítás határideje egyre távolabbi időpontra tolódik, ami felveti a 
-                    felelősök elszámoltatásának hiányát és a projektmenedzsment komoly problémáit.</p>
+        <section class="section-white" id="peticio">
+            <div class="inner-container">
+                <div class="block-title"></a>Petíció</div>
+                <p>Címzett: Lázár János, építési és közlekedési miniszter</p>
+                <p>Tisztelt Miniszter Úr!</p>
+                <div class="read-less-content">* * *</div>
+                <div class="read-more-content">
+                    <p>2021 októberében nagy büszkeséggel adták át az M30-as autópálya új, Miskolcot és 
+                    Tornyosnémetit összekötő szakaszát, amely nemcsak Magyarország, hanem egész Közép-Európa 
+                    közlekedésében kulcsszerepet játszik. Ez a szakasz a Via Carpatia nemzetközi folyosó 
+                    része, mely az európai gazdasági és logisztikai hálózat gerincét alkotja. Nemzeti és 
+                    európai szinten is jelentős szakasz épült meg, jelentős részben uniós forrásokból.
+                    </p>
+                    <p>Mégis, mindössze <strong>két év</strong> elteltével, 2024 februárjában a szakasz súlyos hibái miatt 
+                        teljes szélességében le kellett zárni az autópályát. Ez nemcsak az autópálya-mérnöki 
+                        gyakorlat kritikája, hanem szégyen az ország számára is. Hogyan lehetséges, hogy egy 
+                        ilyen kaliberű beruházás mindössze két év alatt használhatatlanná váljon? ...
+                    </p>
+    
+                    <p>A közlekedők és a környéken élők elviselhetetlen helyzetbe kerültek:</p>
+                    <ul>
+                        <li>Az utazási idők drasztikusan megnövekedtek, a 3-as főút és Arnót település és 
+                            környéke élhetetlenné vált a torlódások és a megnövekedett forgalom miatt.</li>
+                        <li>Az Arnót belterületére terelődő forgalom életveszélyes helyzeteket teremt, és 
+                            már személyi sérülések is történtek.</li>
+                        <li>Az itt elhaladó nemzetközi forgalom és az európai uniós polgárok méltán felháborodhatnak, 
+                            hiszen a pálya építésére szánt EU-s forrásokat nem megfelelő minőségbiztosítási 
+                            eljárások mellett használták fel.</li>
+                    </ul>
+                    <p>Elfogadhatatlan, hogy 9 hónap vizsgálódás után további 11 hónap javítási ígéret hangzott 
+                        el, amely közel azonos az eredeti autópálya teljes építési idejével. Ráadásul a nyilatkozatok 
+                        alapján a helyreállítás határideje egyre távolabbi időpontra tolódik, ami felveti a 
+                        felelősök elszámoltatásának hiányát és a projektmenedzsment komoly problémáit.</p>
+                </div>
+    
+                <p>Követeljük:</p>
+                <ol><li>Azonnali és átlátható tájékoztatást a helyreállítási munkálatok ütemezéséről.</li>
+                <li>A forgalom helyreállítását legkésőbb 2025 tavaszáig, beleértve az ideiglenes megoldásokat is.</li>
+                <li>A tervezésért, a kivitelezésért és a minőségbiztosításért felelős szereplők felelősségre vonását, és az 
+                    okozott károk megtérítését a közösség felé.</li>
+                <li>A helyi közlekedési problémák azonnali enyhítését, ideértve az Arnótot elkerülő szakasz 
+                    forgalmi szabályozását és biztonsági intézkedéseket.</li></ol>
+    
+                <div class="read-less-content">* * *</div>
+                <div class="read-more-content">
+                    <p>Tisztelt Miniszter Úr, egy ilyen jelentőségű autópálya nem lehet nemzeti szégyen tárgya. 
+                        Az Ön felelőssége, hogy biztosítsa a hibák kijavítását, a forgalom mihamarabbi helyreállítását, 
+                        és a helyi közösségek megóvását az indokolatlan terhektől.</p>
+                    <p><strong>Várjuk gyors és hatékony intézkedéseit!</strong></p>
+                </div>
+                <button id="toggle-button" class="secondary-button bm" onclick="toggleReadMore()">Az egészet elolvasom...</button>
+                <button id="petition-button" class="primary-button" onclick="window.open('https://szabad.ahang.hu/petitions/allitsak-helyre-az-m30-as-autopalyat-minel-hamarabb', '_blank')">Aláírom</button>
             </div>
-
-            <p>Követeljük:</p>
-            <ol><li>Azonnali és átlátható tájékoztatást a helyreállítási munkálatok ütemezéséről.</li>
-            <li>A forgalom helyreállítását legkésőbb 2025 tavaszáig, beleértve az ideiglenes megoldásokat is.</li>
-            <li>A tervezésért, a kivitelezésért és a minőségbiztosításért felelős szereplők felelősségre vonását, és az 
-                okozott károk megtérítését a közösség felé.</li>
-            <li>A helyi közlekedési problémák azonnali enyhítését, ideértve az Arnótot elkerülő szakasz 
-                forgalmi szabályozását és biztonsági intézkedéseket.</li></ol>
-
-            <div class="read-less-content">* * *</div>
-            <div class="read-more-content">
-                <p>Tisztelt Miniszter Úr, egy ilyen jelentőségű autópálya nem lehet nemzeti szégyen tárgya. 
-                    Az Ön felelőssége, hogy biztosítsa a hibák kijavítását, a forgalom mihamarabbi helyreállítását, 
-                    és a helyi közösségek megóvását az indokolatlan terhektől.</p>
-                <p><strong>Várjuk gyors és hatékony intézkedéseit!</strong></p>
-            </div>
-            <button id="toggle-button" class="secondary-button bm" onclick="toggleReadMore()">Az egészet elolvasom...</button>
-            <button id="petition-button" class="primary-button" onclick="window.open('https://szabad.ahang.hu/petitions/allitsak-helyre-az-m30-as-autopalyat-minel-hamarabb', '_blank')">Aláírom</button>
         </section>
 
         <!-- Block 4: Miért fontos ez? -->
-        <section class="card">
-            <div class="block-title">Miért fontos ez?</div>
-            <p>Egy ilyen hibát már a lezárások előtt hónapokkal fel kellett ismerni, ami elég lett volna a megoldási 
-                terv kidolgozására. A lezárást követően azonnal neki kellett volna állni a javításnak, hogy minél kisebb legyen a kiesés.
-                Azonban a döntéshozók elkényelmesedtek, mert az emberek nem adnak hangot a nap mint nap megélt kárnak.
-            </p>
-            <p> Ezzel a petícióval megmutathatjuk, hogy ennek a lezárásnak minden napja és órája kárt okoz az embereknek és a lehető 
-                leggyorsabb és leghatékonyabb megoldás megvalósítására szükség van. 
-            </p>
-            <p>Többen hangosabbak lehetünk. Oszd meg a petíciót ismerőseiddel is!                
-            </p>
-            <div class="fb-share-button bm"
-                data-href="https://gyenesge.github.io/m30lezaras.html" data-layout="button_count">
+        <section class="section-gray">
+            <div class="inner-container">
+                <div class="block-title">Miért fontos ez?</div>
+                <p>Egy ilyen hibát már a lezárások előtt hónapokkal fel kellett ismerni, ami elég lett volna a megoldási 
+                    terv kidolgozására. A lezárást követően azonnal neki kellett volna állni a javításnak, hogy minél kisebb legyen a kiesés.
+                    Azonban a döntéshozók elkényelmesedtek, mert az emberek nem adnak hangot a nap mint nap megélt kárnak.
+                </p>
+                <p> Ezzel a petícióval megmutathatjuk, hogy ennek a lezárásnak minden napja és órája kárt okoz az embereknek és a lehető 
+                    leggyorsabb és leghatékonyabb megoldás megvalósítására szükség van. 
+                </p>
+                <button id="petition-button" class="primary-button bm" onclick="window.open('https://szabad.ahang.hu/petitions/allitsak-helyre-az-m30-as-autopalyat-minel-hamarabb', '_blank')">Aláírom</button>
+                <p>Többen hangosabbak lehetünk. Oszd meg a petíciót ismerőseiddel is!                
+                </p>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fahang.hu/m30helyreallitas" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="facebook-share-button">
+                    <span class="facebook-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                            <!--rect width="24" height="24" fill="#1877f2" /-->
+                            <path d="M15.117 8.78h-2.072V7.1c0-.5.331-.62.564-.62h1.497V3.934L13.139 3.9c-2.365 0-2.89 1.787-2.89 2.924v1.957h-1.49v2.834h1.49v7.333h3.075v-7.333h2.073l.348-2.834z" fill="#fff" />
+                        </svg>
+                    </span>
+                    Megosztom
+                </a>
             </div>
-            <button id="petition-button" class="primary-button" onclick="window.open('https://szabad.ahang.hu/petitions/allitsak-helyre-az-m30-as-autopalyat-minel-hamarabb', '_blank')">Aláírom</button>
         </section>
 
         <!-- Block 5: Hírek -->
-        <section class="card">
-            <div class="block-title">Kapcsolódó hírek</div>
-            <div class="news-list">
-                <div class="news-item" style="background-image: url('https://cdn.borsod24.hu/uploads/2024/09/het-m30-as-beszakadva-240819.jpg');">
-                    <a href="https://borsod24.hu/2024/09/27/foldbe-sullyedt-tervek-miskolc-mellett-hosszan-elhuzodo-felujitas-var-az-m30-as-autopalyara/">
-                    Borsod24: Még 10-11 hónap a helyreállítás
-                    </a>
-                </div>
-                <div class="news-item" style="background-image: url('https://img.hvg.hu/Img/da658e97-86c0-40f3-acd3-b0a850f32c30/e5e0a265-5199-417c-a681-84bfa5f10425.jpg');">
-                    <a href="https://hvg.hu/cegauto/20240219_Video_M30_autopalya_szetrepedt_ut_Strabag_utlezaras_utfelujitas">
-                    HVG: Videó a lezárt autópályáról
-                    </a>
-                </div>
-                <div class="news-item" style="background-image: url('https://beruhazas.gov.hu/wp/uploads/2015/10/m30_miskolc-tornyosnemeti-718x1024.jpg');">
-                    <a href=https://beruhazas.gov.hu/projektek/m30-gyorsforgalmi-ut-miskolc-tornyosnemeti-kozotti-szakasz/9119">
-                    Minisztérium: M30 autópálya megvalósításának részletei
-                    </a>
+        <section class="section-white">
+            <div class="inner-container">
+                <div class="block-title">Kapcsolódó hírek</div>
+                <div class="news-list">
+                    <div class="news-item" style="background-image: url('https://cdn.borsod24.hu/uploads/2024/09/het-m30-as-beszakadva-240819.jpg');">
+                        <a href="https://borsod24.hu/2024/09/27/foldbe-sullyedt-tervek-miskolc-mellett-hosszan-elhuzodo-felujitas-var-az-m30-as-autopalyara/">
+                        Borsod24: Még 10-11 hónap a helyreállítás
+                        </a>
+                    </div>
+                    <div class="news-item" style="background-image: url('https://img.hvg.hu/Img/da658e97-86c0-40f3-acd3-b0a850f32c30/e5e0a265-5199-417c-a681-84bfa5f10425.jpg');">
+                        <a href="https://hvg.hu/cegauto/20240219_Video_M30_autopalya_szetrepedt_ut_Strabag_utlezaras_utfelujitas">
+                        HVG: Videó a lezárt autópályáról
+                        </a>
+                    </div>
+                    <div class="news-item" style="background-image: url('https://beruhazas.gov.hu/wp/uploads/2015/10/m30_miskolc-tornyosnemeti-718x1024.jpg');">
+                        <a href=https://beruhazas.gov.hu/projektek/m30-gyorsforgalmi-ut-miskolc-tornyosnemeti-kozotti-szakasz/9119">
+                        Minisztérium: M30 autópálya megvalósításának részletei
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -154,9 +175,6 @@
         <div><a href="https://www.facebook.com/MiskolciaPont" target="_blank"><img id="footer-logo" src="apontlogo.jpg"></a></div>
     </footer>
     
-    <!-- Facebook SDK -->
-    <script defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0"></script>
-  
     <script>
 
 function toggleInfo() {
