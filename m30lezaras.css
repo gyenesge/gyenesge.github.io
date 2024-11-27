@@ -17,10 +17,10 @@ p {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-    background-image: url('hatter.jpg'); 
+    /*background-image: url('hatter.jpg'); 
     background-size: cover; 
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
@@ -79,7 +79,7 @@ section {
 }
 
 .section-gray {
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
 }
 
 .section-red {
@@ -159,6 +159,15 @@ section {
 .bm {
     margin-bottom: 10px;
 }
+
+.bm2 {
+    margin-bottom: 20px;
+}
+
+.bm3 {
+    margin-bottom: 30px;
+}
+
 
 .secondary-button:active {
     background-color: gray; 
@@ -253,21 +262,21 @@ section {
 /* Info ikon stílusa */
 .info-icon {
     cursor: pointer;
-    font-size: 1em;
+    font-size: medium;
     font-weight: bold;
     background-color: #007bff;
     color: white;
     border-radius: 8px;
-    /*width: 30px;*/
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     margin-top: auto;
     align-self: center;
-    margin: 0 20px 20px;
-    padding: 0 10px 0 10px;
+    margin: 20px 20px 0 20px;
+    padding: 5px 20px 5px 20px;
+}
+
+.info-icon:active {
+    background-color: #0367d2; 
+    transform: scale(0.98); 
 }
 
 /* Magyarázó doboz alapértelmezetten rejtve */
