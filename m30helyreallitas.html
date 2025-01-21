@@ -187,9 +187,12 @@ let sourceTag = "M30oldal";
 
 const urlParams = new URLSearchParams(window.location.search);
 const qrParamValue = urlParams.get("qr");
-
+const fbParamValue = urlParams.get("fbclid");
 if (qrParamValue) {
     sourceTag = "M30QR" + qrParamValue +"_";
+}
+if (fbParamValue) {
+    sourceTag = "M30fboldal";
 }
 
 
