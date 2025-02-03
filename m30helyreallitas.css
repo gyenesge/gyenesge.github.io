@@ -87,6 +87,67 @@ section {
     background-color: lightcoral;
 }
 
+.section-breaking {
+    background-color: white;
+    color: #333;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.section-breaking a {
+    color: red;
+}
+
+.section-breaking h2 {
+    color: black;
+}
+.section-breaking strong {
+    color: black;
+}
+/*.section-breaking {
+    background-color: #ff2400;
+    color: lightgray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.section-breaking a {
+    color: white;
+}
+
+.section-breaking h2 {
+    color: white;
+}
+.section-breaking strong {
+    color: white;
+}*/
+
+.section-breaking::before,
+  .section-breaking::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20px; /* A sáv vastagsága */
+    background: repeating-linear-gradient(
+      45deg,
+      black 0px,
+      black 10px,
+      yellow 10px,
+      yellow 20px
+    );
+  }
+
+  .section-breaking::before {
+    top: -20px; /* Előtte lévő sáv */
+  }
+
+  .section-breaking::after {
+    bottom: -20px; /* Utána lévő sáv */
+  }
+
 .inner-container {
     margin: 0 auto;
     max-width: 900px;
