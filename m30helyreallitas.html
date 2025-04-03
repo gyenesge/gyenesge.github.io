@@ -27,14 +27,70 @@
 
     <main class="container">
 
-        <!-- Block 2: Kár számláló -->
-        <section class="section-breaking">
+        <!-- Block 1: ígéret követő -->
+        <section class="section-white">
             <div class="inner-container">
-                <h2 class="block-title">RENDKÍVÜLI: Lakossági fórum az M30-as helyreállításáért!</h2>
-                <p>Időpont: <strong> &#x1f4c5; 2025.02.17 hétfő 17:30</strong></p>
-                <p>Helyszín:<strong> &#x1f4Cc; Szikszó, Inkubátorház</strong></p>
-                <p>Gyere el a lakossági fórumra, mondd el a véleményed, tedd fel kérdéseidet! Felkérésünket elfogadta <strong>Lázár János</strong> építési és közlekedési miniszter, valamint az MKIF képviselője is!</p>
-                <p>Az eseményre bárki jöhet, de segíted a szervezők munkáját, ha részvételi szándékod <a href="https://szabad.ahang.hu/events/lakossagi-forum-az-m30-as-mihamarabbi-helyreallitasa-erdekeben?source=M30oldal">ezen linken</a> jelzed.</p>
+                <h2 class="block-title">Követelések és ígéretek követése</h2>
+                <div class="promise-header">
+                    <h3>Átláthatóság és tájékoztatás(2/4)</h3>
+                    <div class="promise-details" id="transparency-toggle" onclick="toggleInfo('transparency-details')">Részletek</div>
+                </div>
+                <div id="transparency-details" class="info-box">
+                    <div>
+                        <div><span class="status-icon">✅</span>Lakossági fórumon az ÉKM részvételével</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">✅</span>Munkacsoport alakul civil részvétellel</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">⚠️</span>Civil résztvevők rendszeresen ellenőrizhetik az építkezést</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">⚠️</span>BME tanulmány a garanciális feltételek teljesülése után nyilvánosságra kerül.</div>
+                    </div>
+                </div>
+                <div class="promise-header">
+                    <h3>M30 helyreállítása (1/3)</h3>
+                    <div class="promise-details" id="recovery-toggle" onclick="toggleInfo('recovery-details')">Részletek</div>
+                </div>
+                <div id="recovery-details" class="info-box">
+                    <div>
+                        <div><span class="status-icon">⚠️</span>Autópálya forgalma teljesen helyreáll a hibás szakaszon 2025.10.31-ig.</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">✅</span>Részletes ütemtervet adnak az M30-as javítására</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">⚠️</span>Szikszó-Halmaj közötti szakaszon nem lesz teljes pálya zár, munkák befejeződnek 2025 nyár végéig</div>
+                    </div>
+                </div>
+                <div class="promise-header">
+                    <h3>Felelősségre vonás és kárpótlás (1/2)</h3>
+                    <div class="promise-details" id="compensation-toggle" onclick="toggleInfo('compensation-details')">Részletek</div>
+                </div>
+                <div id="compensation-details" class="info-box">
+                    <div>
+                        <div><span class="status-icon">✅</span>Lakosság kompenzációt kap az autópálya nem működése miatt.</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">❌</span>M30-as Miskolcot elkerülő szakaszának ingyenessé tételéte</div>
+                    </div>
+                </div>
+                <div class="promise-header">
+                    <h3>Terelés hatásainak enyhítése (1/3)</h3>
+                    <div class="promise-details" id="local-toggle" onclick="toggleInfo('local-details')">Részletek</div>
+                </div>
+                <div id="local-details" class="info-box">
+                    <div>
+                        <div><span class="status-icon">✅</span>Közút átalakítja az arnóti körforgalmat 2025.04.01-ig.</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">⚠️</span>Felsőzsolcai ipar parkban zebra kialakítását megvizsgálják.</div>
+                    </div>
+                    <div>
+                        <div><span class="status-icon">⚠️</span>Felsőzsolcai és arnóti önkormányzati javaslat alapján közlekedés biztonság javítása, ÉKM állja a költségeket.</div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -48,7 +104,7 @@
                     <p id="cost-lost" class="counter bm">Órabérben kifejezett kár</p>
                 </div>
 
-                <div class="info-icon" id="info-toggle" onclick="toggleInfo()">
+                <div class="info-icon" id="info-toggle" onclick="toggleInfo('info-box')">
                     Részletek
                 </div>
                 <div class="info-box" id="info-box">
@@ -208,8 +264,8 @@ if (fbParamValue) {
 
 
 
-function toggleInfo() {
-    const infoBox = document.getElementById("info-box");
+function toggleInfo( boxId ) {
+    const infoBox = document.getElementById(boxId);
     infoBox.classList.toggle("active"); // Az "active" osztály állapotának váltása
 };
 
