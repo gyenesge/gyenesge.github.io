@@ -412,6 +412,8 @@ ul {
 
 h3 {
     font-variant: small-caps;
+    margin-top: 1.5em;
+    margin-bottom: 0em;
 }
 
 .promise-details {
